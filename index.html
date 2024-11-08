@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Challenge</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="intro" class="intro">
+    <h1>Is Mhademo the cutest guy?</h1>
+    <button class="quiz-btn" onclick="handleIntroResponse(true)">Yes</button>
+    <button class="quiz-btn" onclick="handleIntroResponse(false)">No</button>
+    <div id="intro-response" class="hidden"></div>
+  </div>
+
+  <div id="quiz" class="quiz-container hidden">
+    <div id="question-container">
+      <h2 id="question"></h2>
+      <div id="answers">
+        <!-- Answer buttons will be populated here -->
+      </div>
+    </div>
+    <div id="feedback" class="hidden">
+      <p id="feedback-message"></p>
+      <img id="feedback-gif" src="" alt="feedback gif">
+    </div>
+  </div>
+
+  <div id="score-container" class="score-container hidden">
+    <div id="final-score-message"></div>
+    <div id="final-message"></div>
+  </div>
+</body>
+</html>
